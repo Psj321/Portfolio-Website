@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Pranay Joshi, a backend-focused developer specializing in PHP, MySQL, API integrations, and automation workflows. Designing resilient systems.">
+    <meta name="author" content="Pranay Joshi">
+    <meta name="keywords" content="Pranay Joshi, Backend Developer, PHP, MySQL, Systems Engineer, Portfolio, Software Developer, API Automation">
+    <title>Pranay Joshi | Backend Developer & Systems Engineer</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Interactive Background Nodes Canvas -->
+    <div class="background-wrapper">
+        <canvas id="canvas-bg"></canvas>
+        <div class="grid-overlay"></div>
+        <div class="radial-glow"></div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="main-header">
+        <div class="nav-container">
+            <a href="#hero" class="logo">
+                <span class="logo-accent">&lt;</span>pranay<span class="logo-dot">.</span>joshi<span class="logo-accent"> /&gt;</span>
+            </a>
+            
+            <button class="menu-toggle" aria-label="Toggle Navigation Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#approach" class="nav-link">Approach</a></li>
+                    <li><a href="#contact" class="nav-link nav-cta">Ping --sys</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="section-container hero-container">
+                <div class="hero-content">
+                    <div class="terminal-tag">
+                        <span class="terminal-prompt">pranay@joshi:~$</span> <span class="terminal-cmd">run intro.sh</span>
+                    </div>
+                    <h1 class="hero-title animate-title">I build systems, <br><span class="gradient-text">not just projects.</span></h1>
+                    <p class="hero-subtitle">
+                        Backend Developer specializing in high-performance <span class="highlight">PHP</span>, complex relational <span class="highlight">MySQL</span> structures, and intelligent automation workflows.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View Services</span>
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Establish Connection</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Terminal Console Widget -->
+                <div class="hero-terminal">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="terminal-title">system_monitor.log</div>
+                        <div class="terminal-status">ONLINE</div>
+                    </div>
+                    <div class="terminal-body" id="console-logs">
+                        <!-- Filled dynamically by script.js -->
+                        <div class="log-line text-dim">// Loading system diagnostics...</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Animated Down Arrow -->
+            <div class="scroll-down">
+                <a href="#about" aria-label="Scroll to About Section">
+                    <div class="mouse-icon">
+                        <div class="wheel"></div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="section-container">
+                <h2 class="section-title" data-reveal="fade-up">System Architecture <span class="title-accent">// About</span></h2>
+                
+                <div class="about-grid">
+                    <div class="about-text" data-reveal="fade-right">
+                        <p class="lead">
+                            I focus on what happens under the hood. While client-side interfaces are crucial, the core of any digital experience is a secure, fast, and structured engine.
+                        </p>
+                        <p>
+                            As a backend developer, I design databases that preserve data integrity, build clean APIs that connect services efficiently, and write automation scripts that save hours of manual effort. My architecture targets minimal response latency, high security, and clear maintainability.
+                        </p>
+                        <p>
+                            I don't just write scripts; I build robust pipelines that adapt to heavy usage, scale reliably under load, and self-heal during system exceptions.
+                        </p>
+                    </div>
+                    
+                    <!-- Systems Stats Block -->
+                    <div class="about-stats" data-reveal="fade-left">
+                        <div class="stat-card">
+                            <div class="stat-glow"></div>
+                            <div class="stat-number" data-target="15">0</div>
+                            <div class="stat-label">Projects Built</div>
+                            <div class="stat-desc">Fullstack, CLI, & API Engines</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-glow"></div>
+                            <div class="stat-number" data-target="120">0</div>
+                            <div class="stat-label">Database Tables Designed</div>
+                            <div class="stat-desc">Highly Normalized & Indexed</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-glow"></div>
+                            <div class="stat-number" data-target="10000">0</div>
+                            <div class="stat-label">Automated Actions / Week</div>
+                            <div class="stat-desc">Emails, Logs & Data Syncs</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-glow"></div>
+                            <div class="stat-number" data-target="99">0</div>
+                            <div class="stat-label">% Uptime Mindset</div>
+                            <div class="stat-desc">Error Logging & Resilience</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="section-container">
+                <h2 class="section-title" data-reveal="fade-up">System Deployments <span class="title-accent">// Services</span></h2>
+                <p class="section-subtitle" data-reveal="fade-up">A visual breakdown of core production and CLI projects built to handle real utility.</p>
+                
+                <div class="projects-grid">
+                    <!-- Project 1: Advanced Attendance Management System -->
+                    <article class="project-card" data-reveal="fade-up">
+                        <div class="project-glow"></div>
+                        <div class="project-header">
+                            <div class="project-meta">
+                                <span class="project-status-badge active">PROD</span>
+                                <span class="project-type">Fullstack Web App</span>
+                            </div>
+                            <div class="project-index">01</div>
+                        </div>
+                        <h3 class="project-title">Advanced Attendance Management System</h3>
+                        <p class="project-description">
+                            A complete academic tracking engine designed to eliminate manual attendance tracking. Features separate tracking structures for lectures and practical laboratories, dynamic date-based filtering, and database-driven session generation.
+                        </p>
+                        <div class="project-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Database Design:</span>
+                                <span class="detail-val">Relational schema with normalized tables to manage students, schedules, courses, and attendance logs.</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Bootstrap</span>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Proforma & Commercial Invoice System -->
+                    <article class="project-card" data-reveal="fade-up">
+                        <div class="project-glow"></div>
+                        <div class="project-header">
+                            <div class="project-meta">
+                                <span class="project-status-badge active">PROD</span>
+                                <span class="project-type">ERP / CRUD System</span>
+                            </div>
+                            <div class="project-index">02</div>
+                        </div>
+                        <h3 class="project-title">Proforma & Commercial Invoice System</h3>
+                        <p class="project-description">
+                            An automated financial paperwork calculator built for businesses. It implements safe client-side dynamic calculations for taxation, subtotals, and currency conversions, backed by an optimized MySQL database for CRUD operations on ledger logs.
+                        </p>
+                        <div class="project-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Core Engine:</span>
+                                <span class="detail-val">Asynchronous CRUD controllers handling transaction states and clean billing histories.</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Fpdf</span>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: AI Email Automation System -->
+                    <article class="project-card" data-reveal="fade-up">
+                        <div class="project-glow"></div>
+                        <div class="project-header">
+                            <div class="project-meta">
+                                <span class="project-status-badge active">PROD</span>
+                                <span class="project-type">Automation Engine</span>
+                            </div>
+                            <div class="project-index">03</div>
+                        </div>
+                        <h3 class="project-title">AI Email Automation System</h3>
+                        <p class="project-description">
+                            A highly intelligent email marketing and notification daemon. Connects seamlessly with the Gemini API to analyze context and generate custom outreach messages, which are queued and dispatched automatically using highly-reliable SMTP queues.
+                        </p>
+                        <div class="project-details">
+                            <div class="detail-item">
+                                <span class="detail-label">API Gateway:</span>
+                                <span class="detail-val">Gemini API parsing contextual triggers + secure SMTP relay architecture.</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Gemini API</span>
+                            <span class="tech-tag">SMTP</span>
+                            <span class="tech-tag">Cron Jobs</span>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: AI Skin Detection (In Progress) -->
+                    <article class="project-card in-progress" data-reveal="fade-up">
+                        <div class="project-glow"></div>
+                        <div class="project-header">
+                            <div class="project-meta">
+                                <span class="project-status-badge dev">DEV / LAB</span>
+                                <span class="project-type">Computer Vision</span>
+                            </div>
+                            <div class="project-index">04</div>
+                        </div>
+                        <h3 class="project-title">AI Skin Detection System</h3>
+                        <p class="project-description">
+                            An experimental deep-learning system designed to analyze skin characteristics in real-time. Leverages standard computer vision models directly in the client to process webcam feeds, outputting segmented analytical arrays on state.
+                        </p>
+                        <div class="project-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Status:</span>
+                                <span class="detail-val">Currently implementing local model compression to enable 60fps analysis on low-tier mobile devices.</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">TensorFlow.js</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML5 Webcam</span>
+                        </div>
+                    </article>
+
+                    <!-- Project 5: Telephone Directory -->
+                    <article class="project-card" data-reveal="fade-up">
+                        <div class="project-glow"></div>
+                        <div class="project-header">
+                            <div class="project-meta">
+                                <span class="project-status-badge cli">CLI TOOL</span>
+                                <span class="project-type">Systems Utility</span>
+                            </div>
+                            <div class="project-index">05</div>
+                        </div>
+                        <h3 class="project-title">Telephone Directory (Python CLI)</h3>
+                        <p class="project-description">
+                            A lightweight terminal-based directory utility written in Python. Implements complete CRUD functionality on persistent local files, featuring optimized quick-search hash indexes, sorted views, and robust terminal input validations.
+                        </p>
+                        <div class="project-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Storage Architecture:</span>
+                                <span class="detail-val">Safe file I/O operations with transactional read/write checks to avoid file corruption.</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">File Handling</span>
+                            <span class="tech-tag">CLI Framework</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="section-container">
+                <h2 class="section-title" data-reveal="fade-up">Tech Stack Configurations <span class="title-accent">// Stack</span></h2>
+                <p class="section-subtitle" data-reveal="fade-up">A visual config file of language specifications and frameworks I work with daily.</p>
+                
+                <div class="skills-grid">
+                    <!-- Skill 1: PHP -->
+                    <div class="skill-card" data-reveal="fade-up">
+                        <div class="skill-header">
+                            <div class="skill-icon-placeholder text-magenta">php</div>
+                            <h3 class="skill-name">PHP</h3>
+                        </div>
+                        <div class="skill-code">
+                            <span class="code-keyword">const</span> <span class="code-variable">PHP</span> = {<br>
+                            &nbsp;&nbsp;paradigm: <span class="code-string">"Object Oriented"</span>,<br>
+                            &nbsp;&nbsp;architecture: <span class="code-string">"MVC & Procedural"</span>,<br>
+                            &nbsp;&nbsp;features: [<span class="code-string">"PDO"</span>, <span class="code-string">"REST APIs"</span>, <span class="code-string">"Composer"</span>]<br>
+                            };
+                        </div>
+                        <div class="skill-level-bar"><div class="skill-level-fill php-fill"></div></div>
+                    </div>
+
+                    <!-- Skill 2: MySQL -->
+                    <div class="skill-card" data-reveal="fade-up">
+                        <div class="skill-header">
+                            <div class="skill-icon-placeholder text-cyan">sql</div>
+                            <h3 class="skill-name">MySQL</h3>
+                        </div>
+                        <div class="skill-code">
+                            <span class="code-keyword">const</span> <span class="code-variable">MySQL</span> = {<br>
+                            &nbsp;&nbsp;normalization: <span class="code-string">"3NF Standards"</span>,<br>
+                            &nbsp;&nbsp;optimization: [<span class="code-string">"Indexing"</span>, <span class="code-string">"Explain Query"</span>],<br>
+                            &nbsp;&nbsp;procedures: [<span class="code-string">"Triggers"</span>, <span class="code-string">"Foreign Keys"</span>]<br>
+                            };
+                        </div>
+                        <div class="skill-level-bar"><div class="skill-level-fill mysql-fill"></div></div>
+                    </div>
+
+                    <!-- Skill 3: JavaScript -->
+                    <div class="skill-card" data-reveal="fade-up">
+                        <div class="skill-header">
+                            <div class="skill-icon-placeholder text-yellow">js</div>
+                            <h3 class="skill-name">JavaScript</h3>
+                        </div>
+                        <div class="skill-code">
+                            <span class="code-keyword">const</span> <span class="code-variable">JavaScript</span> = {<br>
+                            &nbsp;&nbsp;engine: <span class="code-string">"V8 (ES6+ Standards)"</span>,<br>
+                            &nbsp;&nbsp;features: [<span class="code-string">"Promises / Async-Await"</span>, <span class="code-string">"DOM"</span>],<br>
+                            &nbsp;&nbsp;protocols: [<span class="code-string">"Fetch API"</span>, <span class="code-string">"JSON Parsing"</span>]<br>
+                            };
+                        </div>
+                        <div class="skill-level-bar"><div class="skill-level-fill js-fill"></div></div>
+                    </div>
+
+                    <!-- Skill 4: Python -->
+                    <div class="skill-card" data-reveal="fade-up">
+                        <div class="skill-header">
+                            <div class="skill-icon-placeholder text-blue">py</div>
+                            <h3 class="skill-name">Python</h3>
+                        </div>
+                        <div class="skill-code">
+                            <span class="code-keyword">const</span> <span class="code-variable">Python</span> = {<br>
+                            &nbsp;&nbsp;primary: <span class="code-string">"Automation Scripts & CLI"</span>,<br>
+                            &nbsp;&nbsp;libraries: [<span class="code-string">"Requests"</span>, <span class="code-string">"OS / File Systems"</span>],<br>
+                            &nbsp;&nbsp;integrations: [<span class="code-string">"Gemini API"</span>, <span class="code-string">"SMTP Daemons"</span>]<br>
+                            };
+                        </div>
+                        <div class="skill-level-bar"><div class="skill-level-fill python-fill"></div></div>
+                    </div>
+
+                    <!-- Skill 5: C++ -->
+                    <div class="skill-card" data-reveal="fade-up">
+                        <div class="skill-header">
+                            <div class="skill-icon-placeholder text-violet">c++</div>
+                            <h3 class="skill-name">C++</h3>
+                        </div>
+                        <div class="skill-code">
+                            <span class="code-keyword">const</span> <span class="code-variable">CPlusPlus</span> = {<br>
+                            &nbsp;&nbsp;fundamentals: <span class="code-string">"Data Structures & Algos"</span>,<br>
+                            &nbsp;&nbsp;capabilities: [<span class="code-string">"Pointers"</span>, <span class="code-string">"Memory Management"</span>],<br>
+                            &nbsp;&nbsp;compilers: [<span class="code-string">"GCC"</span>, <span class="code-string">"Clang Toolchains"</span>]<br>
+                            };
+                        </div>
+                        <div class="skill-level-bar"><div class="skill-level-fill cpp-fill"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Philosophy Section -->
+        <section id="approach" class="approach-section">
+            <div class="section-container">
+                <h2 class="section-title" data-reveal="fade-up">Engineering Philosophy <span class="title-accent">// Approach</span></h2>
+                <p class="section-subtitle" data-reveal="fade-up">Here is where I place my architectural priorities when constructing server-side networks.</p>
+                
+                <div class="approach-grid">
+                    <div class="approach-cards-column">
+                        <div class="approach-card" data-reveal="fade-right">
+                            <div class="approach-num">01</div>
+                            <div class="approach-content">
+                                <h3>Building Real Systems</h3>
+                                <p>No vanity stats or bloated packages. I focus on server-side performance, clean logging protocols, structured configurations, and standard architectural designs that ensure the codebase remains maintainable months down the line.</p>
+                            </div>
+                        </div>
+                        <div class="approach-card" data-reveal="fade-right">
+                            <div class="approach-num">02</div>
+                            <div class="approach-content">
+                                <h3>Database-Driven Design</h3>
+                                <p>Databases are the bedrock of any business. I design normalized structures up to 3NF, handle cascade deletes safely, build reliable indexes to avoid table locks, and use explain statements to write highly-performant queries.</p>
+                            </div>
+                        </div>
+                        <div class="approach-card" data-reveal="fade-right">
+                            <div class="approach-num">03</div>
+                            <div class="approach-content">
+                                <h3>Automation and APIs</h3>
+                                <p>If a task is repetitive, it should be automated. I specialize in building custom API integrations, configuring automated scheduler daemons (like cron jobs), and connecting language models like Gemini to handle text parsing.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interactive flow chart rendering the server lifecycle of a request -->
+                    <div class="approach-visualization" data-reveal="fade-left">
+                        <div class="vis-header">
+                            <div class="dot red"></div>
+                            <div class="vis-title">Backend Request Lifecycle Flow</div>
+                        </div>
+                        <div class="vis-body">
+                            <div class="flow-step">
+                                <div class="flow-badge badge-client">CLIENT</div>
+                                <div class="flow-label">HTTP POST Request</div>
+                                <div class="flow-arrow">↓</div>
+                            </div>
+                            <div class="flow-step">
+                                <div class="flow-badge badge-gateway">API GATEWAY</div>
+                                <div class="flow-label">Validation & Routing</div>
+                                <div class="flow-arrow">↓</div>
+                            </div>
+                            <div class="flow-step">
+                                <div class="flow-badge badge-app">PHP ENGINE</div>
+                                <div class="flow-label">Business Logic & Controllers</div>
+                                <div class="flow-arrow">↓</div>
+                            </div>
+                            <div class="flow-step">
+                                <div class="flow-badge badge-db">MYSQL INSTANCE</div>
+                                <div class="flow-label">Transaction Commit (INDEXED)</div>
+                                <div class="flow-arrow">↓</div>
+                            </div>
+                            <div class="flow-step">
+                                <div class="flow-badge badge-queue">QUEUE DAEMON</div>
+                                <div class="flow-label">Email Dispatched (SMTP Async)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="section-container">
+                <h2 class="section-title" data-reveal="fade-up">Establish Handshake <span class="title-accent">// Contact</span></h2>
+                
+                <div class="contact-container" data-reveal="fade-up">
+                    <div class="contact-terminal">
+                        <div class="terminal-header">
+                            <div class="terminal-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <div class="terminal-title">contact_connection.sh</div>
+                        </div>
+                        <div class="terminal-body">
+                            <p class="log-line"><span class="text-green">[SYS]</span> Initializing secure network connection protocols...</p>
+                            <p class="log-line"><span class="text-green">[SYS]</span> Remote Host: <span class="text-yellow">pranayjoshi537@gmail.com</span></p>
+                            <p class="log-line"><span class="text-dim">// Ready to receive messages. Clicking below will open your local email client.</span></p>
+                            
+                            <div class="terminal-actions">
+                                <a href="mailto:pranayjoshi537@gmail.com" class="btn btn-primary btn-glow">
+                                    <span>ping_pranay()</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="socials-wrapper">
+                        <h3>Connect with Pranay</h3>
+                        <p class="text-dim">Access my external endpoints to explore complete codebases or professional histories.</p>
+                        
+                        <div class="social-links">
+                            <!-- Email -->
+                            <a href="mailto:pranayjoshi537@gmail.com" class="social-icon-btn" aria-label="Email Pranay">
+                                <svg class="social-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                                <span>Email</span>
+                            </a>
+                            
+                            <!-- GitHub (Placeholder with active layout styling) -->
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="View Pranay's GitHub Profile">
+                                <svg class="social-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                </svg>
+                                <span>GitHub</span>
+                            </a>
+                            
+                            <!-- LinkedIn -->
+                            <a href="https://www.linkedin.com/in/pranay-joshi7" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="View Pranay's LinkedIn Profile">
+                                <svg class="social-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                    <rect x="2" y="9" width="4" height="12"/>
+                                    <circle cx="4" cy="4" r="2"/>
+                                </svg>
+                                <span>LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Pranay Joshi. All systems operational.</p>
+            <p class="text-dim">Built with Semantic HTML5, Vanilla CSS, and JavaScript. Zero third-party packages.</p>
+        </div>
+    </footer>
+
+    <!-- Script connection -->
+    <script src="script.js"></script>
+</body>
+</html>
